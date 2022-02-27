@@ -30,7 +30,7 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    fetchMovies(`${API_ENDPOINT}&s=${query}&type=movie&page=5`);
+    fetchMovies(`${API_ENDPOINT}&s=${query}`);
   }, [query]);
 
   return (
